@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:actionBarNavMode="tabs"
+    android:background="#fff1f1f2">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff1f1f2">
+        <TextView
+            android:text="Mes Identifiants"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textSize="37dp"
+            android:textColor="#ff9c9c9c" />
+        <TextView
+            android:text="SmartTicket ID:"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="#ff9c9c9c"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20sp" />
+        <TextView
+            android:text="damien.thioulouse@gmail.com"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="#ff9c9c9c"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:text="Code barre à montrer en caisse:"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="#ff9c9c9c"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="20sp" />
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="3dip"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/image_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout3">
+                <ImageView
+                    android:id="@+id/imageBarcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+                <TextView
+                    android:text="Text"
+                    android:id="@+id/ID"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:background="#ffffffff"
+                    android:textColor="#ff000000"
+                    android:textSize="14dp"
+                    android:layout_below="@id/imageBarcode"
+                    android:layout_alignStart="@id/imageBarcode"
+                    android:layout_alignEnd="@id/imageBarcode"
+                    android:fitsSystemWindows="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

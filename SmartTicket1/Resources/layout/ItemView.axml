@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DataRow1"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="20dp"
+    android:background="#ffffffff">
+    <LinearLayout
+        android:id="@+id/DataRow2"
+        android:orientation="horizontal"
+        android:layout_width="280dp"
+        android:layout_height="20dp"
+        android:background="#ffffffff"
+        android:layout_centerHorizontal="true">
+    <!--    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataId"
+        android:text="Id"
+        android:layout_margin="2dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#ff5684e3"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp" />-->
+        <TextView
+            android:text="Qty"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/Qty"
+            android:textColor="#ff110303"
+            android:layout_weight="0.5"
+            android:minWidth="6dp"
+            android:layout_gravity="center"
+            android:paddingRight="5dp" />
+        <TextView
+            android:text="Desc"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/Desc"
+            android:textColor="#ff110303"
+            android:gravity="left"
+            android:layout_weight="2"
+            android:minWidth="40dp"
+            android:paddingLeft="3dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:text="Price"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/Price"
+            android:textColor="#ff110303"
+            android:layout_weight="0.8"
+            android:minWidth="5dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+    <View
+        android:layout_width="46.6dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/view1"
+        android:background="#ffd9d9d9"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/DataRow2" />
+    <CheckBox
+        android:text="CheckBox"
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/view2"
+        android:width="30dp"
+        android:height="10dp"
+        android:layout_marginLeft="1dp" />
+    <View
+        android:layout_width="46.6dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/view2"
+        android:background="#ffd9d9d9"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/DataRow2" />
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DataRow1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+    android:background="#ffffffff">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="#ffc1c1c1" />
+    <LinearLayout
+        android:id="@+id/DataRow2"
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:layout_centerHorizontal="true">
+    <!--    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DataId"
+        android:text="Id"
+        android:layout_margin="2dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#ff5684e3"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp" />-->
+        <TextView
+            android:text="TotalPrice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:id="@+id/TotalPrice"
+            android:textColor="#ff110303"
+            android:gravity="right"
+            android:paddingTop="20dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="20dp" />
+        <LinearLayout
+            android:id="@+id/TVA_layout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:text="MTTVA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:id="@+id/MTTVA"
+                android:textColor="#ff110303"
+                android:gravity="center" />
+            <TextView
+                android:text="MTHT"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:id="@+id/MTHT"
+                android:textColor="#ff110303"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:text="MTTTC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:id="@+id/MTTTC"
+                android:textColor="#ff110303"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <TextView
+            android:text="Merci"
+            android:layout_width="fill_parent"
+            android:layout_height="50.6dp"
+            android:gravity="center"
+            android:id="@+id/Merci"
+            android:layout_weight="0.40"
+            android:textColor="#ff110303"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="46.6dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/view1"
+        android:background="#ffd9d9d9"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/DataRow2" />
+    <View
+        android:layout_width="46.6dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/view2"
+        android:background="#ffd9d9d9"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/DataRow2" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:id="@+id/view3"
+        android:background="#ffc1c1c1"
+        android:minHeight="1dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
