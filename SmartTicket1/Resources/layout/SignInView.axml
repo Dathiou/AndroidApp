@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    p1:layout_width="fill_parent"
+    p1:layout_height="fill_parent"
+    p1:fitsSystemWindows="true"
+    tools:actionBarNavMode="tabs"
+    p1:background="#ff99be0f">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="fill_parent"
+        p1:layout_height="fill_parent"
+        p1:id="@+id/linearLayout1"
+        p1:background="#ff99be0f">
+        <ImageView
+            p1:src="@drawable/logogreen"
+            p1:layout_width="match_parent"
+            p1:layout_gravity="top"
+            p1:scaleType="fitCenter"
+            p1:layout_height="wrap_content"
+            p1:adjustViewBounds="true"
+            p1:layout_marginTop="10dp"
+            p1:layout_marginBottom="40dp" />
+        <EditText
+            p1:id="@+id/input_email"
+            p1:layout_width="300dp"
+            p1:layout_height="wrap_content"
+            p1:inputType="textEmailAddress"
+            p1:hint="Email"
+            p1:layout_gravity="center" />
+        <EditText
+            p1:id="@+id/input_password"
+            p1:layout_width="300dp"
+            p1:layout_height="wrap_content"
+            p1:inputType="textPassword"
+            p1:hint="Password"
+            p1:layout_gravity="center" />
+        <TextView
+            p1:id="@+id/link_signup"
+            p1:layout_width="fill_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_marginBottom="24dp"
+            p1:layout_marginTop="15dp"
+            p1:text="No account yet? Create one"
+            p1:gravity="center"
+            p1:textSize="16dip"
+            p1:clickable="true"
+            p1:onClick="onClick" />
+        <Button
+            p1:id="@+id/btn_login"
+            p1:layout_width="200dp"
+            p1:layout_height="50dp"
+            p1:layout_marginBottom="24dp"
+            p1:layout_marginLeft="13dp"
+            p1:layout_marginRight="13dp"
+            p1:padding="12dp"
+            p1:text="Login"
+            p1:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>
