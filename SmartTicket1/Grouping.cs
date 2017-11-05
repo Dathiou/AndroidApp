@@ -13,6 +13,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+
 namespace SmartTicket1
 {
 	[Activity (Label = "Grouping")]			
